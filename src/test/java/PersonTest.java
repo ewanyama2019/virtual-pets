@@ -8,4 +8,16 @@ public class PersonTest {
         Person testPerson = new Person("Henry", "[email protected]");
         assertEquals(true, testPerson instanceof Person);
     }
+
+    @Test
+    public void getName_personInstatiatesWithName_Henry () {
+        Person testPerson = new Person ("Henry", "[email protected]");
+        assertEquals("Henry", testPerson.getName());
+    }
+
+    @Test
+    public void getEmail_personInstantiatesWithEmail_String () {
+        Person testPerson = new Person ("Henry", "[email protected]");
+        assertEquals("[email protected]", testPerson.getEmail());
+    }
 }
